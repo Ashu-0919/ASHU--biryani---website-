@@ -1,20 +1,522 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ASHU Authentic Biryani & Premium Catering</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ASHU Authentic Biryani & Premium Catering | Chennai</title>
+
+<meta name="description" content="ASHU Authentic Biryani & Premium Catering – Authentic Biryani, Premium Catering & Bulk Orders in Chennai.">
+
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#faf7f0;color:#1f241f}header{background:#173f32;color:#fff;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:5}header b{font-size:20px}nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:14px}.hero{padding:80px 7%;background:linear-gradient(135deg,#173f32,#245a47);color:white}.hero h1{font-size:48px;max-width:720px;margin:0 0 15px}.hero p{font-size:19px;max-width:650px;line-height:1.6}.btn{display:inline-block;padding:14px 22px;border-radius:30px;text-decoration:none;font-weight:bold;margin:8px 8px 0 0}.wa{background:#fff;color:#173f32}.call{border:1px solid #fff;color:#fff}section{padding:60px 7%}h2{text-align:center;font-size:32px;margin-top:0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.card{background:white;padding:25px;border-radius:18px;box-shadow:0 6px 25px #0000000d}.card h3{margin-top:0;color:#173f32}.contact{background:#173f32;color:white;text-align:center}.contact h2{color:white}.contact .wa{background:#fff}.small{text-align:center;color:#666;margin-top:30px}footer{text-align:center;padding:20px;background:#102d24;color:#ddd;font-size:13px}@media(max-width:700px){nav{display:none}.hero h1{font-size:36px}}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: #8b0000;
+  color: white;
+  padding: 18px 6%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.hero {
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 20px;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+    url("https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1600&q=80")
+    center/cover;
+  color: white;
+}
+
+.hero-content {
+  max-width: 850px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 7vw, 76px);
+  line-height: 1.05;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #ffd36a;
+}
+
+.hero p {
+  font-size: 19px;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 6px;
+}
+
+.btn-primary {
+  background: #0b8f45;
+  color: white;
+}
+
+.btn-secondary {
+  background: white;
+  color: #8b0000;
+}
+
+section {
+  padding: 70px 6%;
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  color: #8b0000;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: #666;
+}
+
+.about {
+  text-align: center;
+  max-width: 850px;
+  margin: auto;
+  font-size: 17px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  transition: transform .3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 22px;
+}
+
+.card h3 {
+  color: #8b0000;
+  margin-bottom: 8px;
+}
+
+.menu {
+  background: #faf7f1;
+}
+
+.menu-list {
+  max-width: 850px;
+  margin: auto;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-item strong {
+  color: #8b0000;
+}
+
+.cta {
+  background: #8b0000;
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.contact-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.contact-card {
+  padding: 28px;
+  border-radius: 18px;
+  background: #fafafa;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.contact-card h3 {
+  color: #8b0000;
+  margin-bottom: 8px;
+}
+
+footer {
+  background: #151515;
+  color: white;
+  text-align: center;
+  padding: 28px 15px;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25D366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  box-shadow: 0 5px 20px rgba(0,0,0,.25);
+  z-index: 2000;
+}
+
+@media (max-width: 800px) {
+
+  .nav a {
+    display: none;
+  }
+
+  .hero {
+    min-height: 75vh;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .cards,
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 55px 5%;
+  }
+
+  .section-title h2 {
+    font-size: 30px;
+  }
+}
 </style>
 </head>
+
 <body>
-<header><b>ASHU</b><nav><a href="#about">About</a><a href="#menu">Menu</a><a href="#catering">Catering</a><a href="#contact">Contact</a></nav></header>
-<div class="hero"><h1>Authentic Biryani. Premium Catering.</h1><p>Freshly prepared biryani and catering for family functions, parties, corporate events and bulk orders in Chennai.</p>
-<a class="btn wa" href="https://wa.me/917010504545?text=Hi%20ASHU%20Biryani%2C%20I%20would%20like%20to%20place%20an%20order.">WhatsApp Order</a>
-<a class="btn call" href="tel:+917010504545">Call 70105 04545</a></div>
-<section id="about"><h2>Why ASHU?</h2><div class="grid"><div class="card"><h3>Authentic Taste</h3><p>Richly flavoured biryani prepared with carefully selected ingredients and traditional cooking methods.</p></div><div class="card"><h3>Fresh Preparation</h3><p>Made for your order with attention to taste, freshness and presentation.</p></div><div class="card"><h3>Premium Catering</h3><p>From small family gatherings to large celebrations and bulk orders.</p></div></div></section>
-<section id="menu"><h2>Our Menu</h2><div class="grid"><div class="card"><h3>Mutton Biryani</h3><p>Signature mutton biryani for individual and bulk orders.</p></div><div class="card"><h3>Chicken Biryani</h3><p>Fragrant rice, tender chicken and authentic masala.</p></div><div class="card"><h3>Party Catering</h3><p>Custom quantities and menus for your special occasions.</p></div></div><p class="small">Ask us for today's menu and quotation on WhatsApp.</p></section>
-<section id="catering"><h2>Catering for Every Occasion</h2><div class="grid"><div class="card"><h3>Family Functions</h3><p>Birthdays, weddings, engagements and get-togethers.</p></div><div class="card"><h3>Corporate Events</h3><p>Reliable bulk food service for office events and gatherings.</p></div><div class="card"><h3>Bulk Orders</h3><p>Need 10kg, 25kg or more? Contact us for a customised quote.</p></div></div></section>
-<section id="contact" class="contact"><h2>Ready to Order?</h2><p>Triplicane, Chennai</p><p><strong>70105 04545</strong></p><a class="btn wa" href="https://wa.me/917010504545">Chat on WhatsApp</a></section>
-<footer>© 2026 ASHU Authentic Biryani & Premium Catering</footer>
-</body></html>
+
+<header>
+  <div class="nav">
+    <div class="logo">ASHU AUTHENTIC BIRYANI</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#catering">Catering</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+
+    <h1>Authentic <span>Biryani</span>.<br>Premium Catering.</h1>
+
+    <p>
+      Traditional taste, rich aroma and generous portions —
+      freshly prepared for your family, functions and special occasions.
+    </p>
+
+    <a class="btn btn-primary"
+       href="https://wa.me/917010504545?text=Hi%20ASHU%20Biryani%2C%20I%20would%20like%20to%20place%20an%20order.">
+       Order on WhatsApp
+    </a>
+
+    <a class="btn btn-secondary" href="#menu">
+       View Menu
+    </a>
+
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Why ASHU?</h2>
+      <p>Made with passion. Served with pride.</p>
+    </div>
+
+    <div class="about">
+      <p>
+        At <strong>ASHU Authentic Biryani & Premium Catering</strong>,
+        we believe great biryani is more than just food.
+        It is aroma, tradition, quality and the happiness of sharing
+        a memorable meal with the people you love.
+      </p>
+
+      <br>
+
+      <p>
+        From family gatherings to large celebrations and bulk orders,
+        we prepare every order with care and consistency.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="menu" id="menu">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Our Menu</h2>
+      <p>Freshly prepared for every order</p>
+    </div>
+
+    <div class="menu-list">
+
+      <div class="menu-item">
+        <span>Chicken Biryani</span>
+        <strong>Signature</strong>
+      </div>
+
+      <div class="menu-item">
+        <span>Mutton Biryani</span>
+        <strong>Premium</strong>
+      </div>
+
+      <div class="menu-item">
+        <span>Chicken 65</span>
+        <strong>Popular</strong>
+      </div>
+
+      <div class="menu-item">
+        <span>Mutton 65</span>
+        <strong>Special</strong>
+      </div>
+
+      <div class="menu-item">
+        <span>Egg / Veg Options</span>
+        <strong>Available</strong>
+      </div>
+
+      <div class="menu-item">
+        <span>Bulk Biryani Orders</span>
+        <strong>Custom Quote</strong>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="catering">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Premium Catering</h2>
+      <p>Perfect for every occasion</p>
+    </div>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?auto=format&fit=crop&w=900&q=80">
+
+        <div class="card-content">
+          <h3>Family Events</h3>
+          <p>
+            Birthdays, anniversaries, family gatherings and
+            special celebrations.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80">
+
+        <div class="card-content">
+          <h3>Functions & Events</h3>
+          <p>
+            Delicious catering for weddings, receptions,
+            parties and corporate events.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80">
+
+        <div class="card-content">
+          <h3>Bulk Orders</h3>
+          <p>
+            Large quantity biryani orders prepared fresh
+            with consistent quality.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="cta">
+
+  <div class="container">
+
+    <h2>Planning an Event?</h2>
+
+    <p>
+      Let ASHU take care of the food while you enjoy your occasion.
+    </p>
+
+    <br>
+
+    <a class="btn btn-secondary"
+       href="https://wa.me/917010504545?text=Hi%20ASHU%20Biryani%2C%20I%20need%20catering%20for%20an%20event.">
+       Get Catering Quote
+    </a>
+
+  </div>
+
+</section>
+
+<section id="contact">
+
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Contact ASHU</h2>
+      <p>We are ready for your next order</p>
+    </div>
+
+    <div class="contact-box">
+
+      <div class="contact-card">
+        <h3>Call</h3>
+        <p>
+          <a href="tel:+917010504545">
+            +91 70105 04545
+          </a>
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <h3>WhatsApp</h3>
+        <p>
+          <a href="https://wa.me/917010504545">
+            Chat with us
+          </a>
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Location</h3>
+        <p>Triplicane, Chennai</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 ASHU Authentic Biryani & Premium Catering</p>
+  <p>Triplicane, Chennai</p>
+</footer>
+
+<a class="whatsapp"
+   href="https://wa.me/917010504545?text=Hi%20ASHU%20Biryani%2C%20I%20would%20like%20to%20order."
+   aria-label="WhatsApp">
+   W
+</a>
+
+</body>
+</html>
