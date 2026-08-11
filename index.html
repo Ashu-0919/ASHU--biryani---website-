@@ -81,7 +81,7 @@
     display:flex;align-items:center;
     color:var(--ivory);
     background:linear-gradient(180deg,rgba(7,58,41,.55),rgba(7,58,41,.88)),
-      url('IMG_20260810_132257.jpg') center/cover no-repeat;
+      url('gallery1.jpg') center/cover no-repeat;
   }
   .hero-inner{
     max-width:1100px;margin:0 auto;padding:120px 24px 60px;
@@ -104,7 +104,6 @@
     font-size:1.05rem;color:#EFE1CC;
   }
   .hero-cta{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap;}
-  .hero-logo{width:150px;height:auto;margin-bottom:28px;}
   .btn-primary{
     background:var(--gold);color:var(--maroon-deep);
     padding:14px 28px;font-weight:600;font-size:.85rem;
@@ -120,7 +119,7 @@
   .section-head{
     display:flex;align-items:flex-end;justify-content:space-between;
     gap:24px;margin-bottom:48px;flex-wrap:wrap;
-    border-bottom:1px solid rgba(12,107,78,.15);
+    border-bottom:1px solid rgba(94,18,32,.15);
     padding-bottom:24px;
   }
   .section-head .eyebrow{color:var(--maroon);}
@@ -131,14 +130,14 @@
   .services{background:var(--ivory);}
   .service-grid{
     display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:1px;background:rgba(12,107,78,.15);
-    border:1px solid rgba(12,107,78,.15);
+    gap:1px;background:rgba(94,18,32,.15);
+    border:1px solid rgba(94,18,32,.15);
   }
   .service-card{
     background:var(--ivory);padding:34px 26px;
     transition:background .25s ease;
   }
-  .service-card:hover{background:#E9F1EC;}
+  .service-card:hover{background:#F3E7D2;}
   .service-card .num{
     font-family:'Cormorant Garamond',serif;font-size:.95rem;
     color:var(--gold);letter-spacing:.1em;margin-bottom:14px;display:block;
@@ -153,20 +152,13 @@
   .gallery .section-head p{color:#D8C4B4;}
   .gallery-grid{
     display:grid;
-    grid-template-columns:repeat(6,1fr);
-    grid-auto-rows:140px;
-    gap:8px;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
   }
-  .gallery-grid img{width:100%;height:100%;object-fit:cover;}
-  .g1{grid-column:span 3;grid-row:span 2;}
-  .g2{grid-column:span 3;grid-row:span 1;}
-  .g3{grid-column:span 3;grid-row:span 1;}
-  .g4{grid-column:span 2;grid-row:span 1;}
-  .g5{grid-column:span 2;grid-row:span 1;}
-  .g6{grid-column:span 2;grid-row:span 1;}
-  @media(max-width:680px){
-    .gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px;}
-    .g1,.g2,.g3,.g4,.g5,.g6{grid-column:span 1;grid-row:span 1;}
+  .gallery-grid img{width:100%;height:280px;object-fit:cover;border-radius:2px;}
+  @media(max-width:600px){
+    .gallery-grid{grid-template-columns:1fr;}
+    .gallery-grid img{height:240px;}
   }
 
   .menu-highlight{
@@ -180,7 +172,7 @@
   .menu-list{list-style:none;}
   .menu-list li{
     display:flex;justify-content:space-between;
-    padding:10px 0;border-bottom:1px dashed rgba(12,107,78,.25);
+    padding:10px 0;border-bottom:1px dashed rgba(94,18,32,.25);
     font-size:.95rem;
   }
   .menu-list li span:last-child{color:var(--maroon);font-weight:600;}
@@ -220,7 +212,6 @@
 
 <section class="hero">
   <div class="hero-inner">
-    <img src="logo.png" alt="Ashu logo" class="hero-logo">
     <div class="eyebrow">Traditional Dum &middot; Since Generations</div>
     <h1>Biryani sealed the <em>old way</em>, served the royal way</h1>
     <p class="lede">Slow-cooked dum biryani and premium catering for weddings, engagements, birthdays, corporate events and Islamic functions.</p>
@@ -261,12 +252,8 @@
       <p>Every batch cooked low and slow, sealed and opened at the table.</p>
     </div>
     <div class="gallery-grid">
-      <img class="g1" src="IMG_20260810_132257.jpg" alt="Dum biryani">
-      <img class="g2" src="Screenshot_2026-08-10-13-29-4.png" alt="Ashu Biryani">
-      <img class="g3" src="logo.png" alt="Ashu logo">
-      <img class="g4" src="IMG_20260810_132257.jpg" alt="Biryani">
-      <img class="g5" src="IMG_20260810_132257.jpg" alt="Biryani">
-      <img class="g6" src="IMG_20260810_132257.jpg" alt="Biryani">
+      <img class="g1" src="gallery1.jpg" alt="Ashu Biryani">
+      <img class="g1" src="gallery2.jpg" alt="Ashu Biryani">
     </div>
   </div>
 </section>
@@ -285,7 +272,7 @@
       <li><span>Desserts</span><span>Add-on</span></li>
     </ul>
   </div>
-  <img src="IMG_20260810_132257.jpg" alt="Biryani plate">
+  <img src="gallery2.jpg" alt="Ashu Biryani">
 </section>
 
 <section class="cta" id="contact">
